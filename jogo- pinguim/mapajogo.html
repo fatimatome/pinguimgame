@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+	<title>Jogo do Pinguim</title>
+	<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="pinguim.js"></script>
+</head>
+
+<h1 style="color: #006bb3;">O Jogo do Pinguim</h1>
+
+<h3 style="color:red;">Apanha o maior número de moedas possivel.</h3>
+
+<body onkeydown="Key(event)" onload="coin_def()">
+
+<div id = "scroller">   
+
+	<div id = "character"></div>
+
+	<div id = "coin" >	
+	<img src = "coin.gif" style="width:10px;height:10px;top:100px" />
+	</div> 
+		
+	<div id = "gold" >
+	<img src = "gold.jpg" style="width:40px;height:20px"/>
+	</div> 
+		
+	<div id = "charizard1">
+	<img src ="charizard1.gif" style= " width:100px;height:100px"/>
+ 	</div>
+	
+	<div id = "bird">
+	<img src ="bird.gif" style= " width:100px;height:100px"/>
+ 	</div>
+	
+	
+</div> 
+
+<div id = "alertScore" ></div> 
+   
+<button onclick = "down()">Baixo</button> 
+<button onclick = "right()">Direita</button>
+<button onclick = "up()">Cima</button> 
+<button onclick = "left()">Esquerda</button> 
+
+<div id="pos"></div>
+
+</body>
+</html>
